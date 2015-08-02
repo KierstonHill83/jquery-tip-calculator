@@ -1,0 +1,21 @@
+h1 {
+  font-size: 60px;
+  text-align: center;
+  font-family: Comic Sans MS;
+}
+
+.form-control {
+  border: solid 2px black;
+  font-family: Comic Sans MS;
+  font-size: 18px;
+  font-style: italic;
+  color: black;
+
+}
+
+.btn {
+  border-width: 2px;
+  border: solid 2px;
+  font-family: Comic Sans MS;
+  font-size: 18px;
+}
