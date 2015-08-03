@@ -1,18 +1,8 @@
-function tipTwentyPercent(num) {
-  return (num * 0.2).toFixed(2);
-}
-
-
-
-
-//how to work when user puts in $
-
-document.getElementsByClassName("btn")[0].addEventListener("click", function() {
+document.getElementsByClassName("btn-md")[0].addEventListener("click", function() {
     var amount = document.getElementsByTagName("input")[0].value.replace(/\$/g, "");
-    var twentyPercentTip = tipTwentyPercent(amount);
+    var tipPercentage = document.getElementById("dropdown");
+    var fullTip = (tipPercentage.value * amount).toFixed(2);
     var tipAmount = document.getElementsByTagName("h2")[0];
-    tipAmount.innerHTML = "You should tip $" + twentyPercentTip;
+    tipAmount.innerHTML = "You should tip $" + fullTip;
   });
 
-
-//find box and selectedIndex
